@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p ${PORT:-8080}",
     "lint": "eslint",
     "docker:build": "docker build -t kin241-nextjs-app .",
     "docker:run": "docker run -p 3000:3000 kin241-nextjs-app",
